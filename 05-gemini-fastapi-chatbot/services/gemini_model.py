@@ -12,10 +12,10 @@ client = genai.Client(
 
 def chatbot(context: str):
     response = client.models.generate_content(
-    model="gemini-2.5-flash",
+    model="gemini-3-flash-preview",
     contents=context,
     config=types.GenerateContentConfig(
-    system_instruction="You are a helpful assistant who analyzes sentiment and also rates the text based on teaching style."
+    system_instruction="You are helpful who memorize user context, it's previous response and generate summaries it he asks"
     )
 )
     return response.text
