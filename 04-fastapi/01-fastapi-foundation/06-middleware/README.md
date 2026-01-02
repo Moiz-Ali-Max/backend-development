@@ -61,7 +61,7 @@ Because FastAPI is a async server.
 - If middleware sync then server might be slow or even block sometimes
 - That's why middleware should be async def
 
-
+ 
 ### CORS = Cross-Origin Resource Sharing
 When our frontend app (running in brwoser) or different domain sends backend api call, then browser security blocks this request for security reasons 
 
